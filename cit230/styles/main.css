@@ -43,3 +43,8 @@ header img {
 footer {
     font-size: 13px;
 }
+
+img {
+    border-block-start-width: 10 px;
+    border-block-start-color: white;
+}
