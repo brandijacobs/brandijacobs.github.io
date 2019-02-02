@@ -1,7 +1,11 @@
 * {
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'Noto Serif SC', Arial, serif;
 }
 
 h1 {
-font-family: 'Cinzel', serif;
+    font-family: 'Cinzel', serif;
+}
+
+li {
+    list-style-type: none;
 }
