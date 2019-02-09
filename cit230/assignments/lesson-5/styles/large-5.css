@@ -1,17 +1,18 @@
-/*@media screen and (min-width:500px) {
-    li {
+@media screen and (min-width:605px) {
+    .home, .preston, .soda, .fish, .storm, .gallery {
         display: inline;
     }
 
-    main {
-        margin-left: 200px;
-        margin-right: 200px;
-}
+    li {
+        display: inline;
+        padding: 1.5em;
     }
 
-    .image1, .image2  {
-        float: top;
-        size: relative;
-        border: white;
-        width: 100%;
+    a:hover {
+        font-weight: bold;
     }
+
+    #nav-toggle {
+        display: none;
+    }
+}

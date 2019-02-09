@@ -22,24 +22,25 @@ body {
 }
 
 .contact {
-    background-color: #9FC6C1;
+    background-color: white;
     color: #3F5A70;
+    padding: 0.25em .5em;
+    margin-bottom: .5em;
 }
 
-.current {
+.preston {
     color: #9FC6C1;
-
 }
 
 footer {
     font-size: .6em;
     background-color:#9FC6C1;
-    width: 100%
+    width: 100%;
 }
 
 h1 {
     margin-top: -.5em;
-
+    font-size: 1.5em;
 }
 
 h2 {
@@ -56,15 +57,16 @@ h3 {
 }
 
 h4 {
-    
+    margin-top: .5em;
+    font-size: .75em;
 }
 
 header {
     background-color:white;
     color: #3F5A70;
-	border: 2px solid #fff7e2;
     text-align: center;
     size: relative;
+    padding-bottom: .5em;
 }
 
 header img, .headings {
@@ -97,6 +99,8 @@ li {
     font-size: .7em;
 }
 
+
+
 .summary {
     color: #3F5A70;
     background-color: white;
@@ -105,27 +109,6 @@ li {
     margin-bottom: .5em;
 }
 
-
-
-/*p {
-    background-color: #FFF8DC;
-    color:#3F5A60;
-}
-
-/*p {
-    max-width: 600px;
-}
-
-/*determine if 500 is a good breakpoint for your layout
-@media screen and (max-width:499px) {
-    /* insert this item when you create a div with a class element of forecast
-    .forcast {
-        display:none;
-    }*/
-    /* figure out how to add hamburger icon and hide all line items in nav
-        then, once clicked (should it be a button, or hover?) all nav items should be visible
-        display:none to display:visible?
-    nav {
-        &equiv; 
-    }
+.home, .preston, .soda, .fish, .storm, .gallery {
+    display: none;
 }
