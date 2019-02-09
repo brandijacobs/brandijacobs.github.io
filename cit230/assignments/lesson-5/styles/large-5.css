@@ -1,5 +1,17 @@
-@media screen and (min-width:500px) {
+/*@media screen and (min-width:500px) {
     li {
         display: inline;
     }
+
+    main {
+        margin-left: 200px;
+        margin-right: 200px;
 }
+    }
+
+    .image1, .image2  {
+        float: top;
+        size: relative;
+        border: white;
+        width: 100%;
+    }
