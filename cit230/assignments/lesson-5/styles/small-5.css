@@ -9,7 +9,7 @@ a {
     margin-left: -2.5em;
 }
 
-article {
+.article {
     background-color:white;
     color: #3F5A70;
     margin-top: -1.5em;
@@ -36,6 +36,10 @@ footer {
     font-size: .6em;
     background-color:#9FC6C1;
     width: 100%;
+}
+
+.forecast {
+    display: none;
 }
 
 h1 {
@@ -79,6 +83,9 @@ hr {
     margin-bottom: -12px;
 }
 
+iframe {
+    width: 100%;
+}
 .image1, .image2  {
     float: top;
     size: relative;
@@ -98,8 +105,6 @@ li {
     margin-top: -1.5em;
     font-size: .7em;
 }
-
-
 
 .summary {
     color: #3F5A70;
