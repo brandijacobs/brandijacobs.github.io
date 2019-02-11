@@ -3,6 +3,11 @@
         display: inline;
     }
 
+    body {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
     li {
         display: inline;
         padding: 1.5em;

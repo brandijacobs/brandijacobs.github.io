@@ -1,6 +1,6 @@
 * {
     font-family: 'Noto Serif SC', serif;
-   /* border: 1px solid #f00 !important; */
+    /* border: 1px solid #f00 !important; */
 }
 
 a {
@@ -19,6 +19,7 @@ a {
 
 body {
     background-color: #3F5A70;
+    margin: .5em;
 }
 
 .contact {
