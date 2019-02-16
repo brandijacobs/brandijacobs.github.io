@@ -1,0 +1,77 @@
+@media screen and (min-width:605px) {
+    .home, .preston, .soda, .fish, .storm, .gallery {
+        display: inline;
+    }
+
+    body {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    li {
+        display: inline;
+        padding: 1.5em;
+    }
+    .article {
+        margin-top: 8px;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    iframe {
+        width: 50%;
+    }
+
+    .image1, .image2  {
+        float: left;
+        width: 20%;
+        padding-right: .5em;
+    }
+
+    .forecast {
+        display: table;
+        background-color:white;
+        color: #3F5A70;
+        padding: .5em;
+        margin-bottom: .5em;
+    }
+
+    .current {
+        margin-bottom: .5em;
+    }
+
+    .motto {
+        text-align: left;
+    }
+
+    .summary {
+        float: top;
+        margin-top: 8px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed
+    }
+
+    th {
+        height: 25px;
+        width: 100%;
+    }
+
+    td>img {
+        width: 100%;
+    }
+
+    table, th, td {
+        width: 100%;
+        border: 1px solid #3F5A70;
+      }
+}
