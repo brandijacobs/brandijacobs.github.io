@@ -92,15 +92,24 @@ iframe {
 }
 
 .image1, .image2  {
-    float: top;
+    float: top; 
     margin-top: 0;
     margin-left: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+main figure {
+    width: 100%;
 }
 
 li {
     list-style-type: none;
     align-content: center;
     font-size: .75em;
+    padding: .5em;
 }
 
 .logo {
