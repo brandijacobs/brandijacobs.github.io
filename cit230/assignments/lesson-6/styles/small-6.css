@@ -6,7 +6,6 @@
 a {
     text-decoration: none;
     color: #3F5A70;
-    margin-left: -2.5em;
 }
 
 .article {
@@ -80,6 +79,10 @@ header img, .headings {
     margin: .5em;
 }
 
+.hide {
+    display: block;
+}
+
 hr {
     margin-bottom: -12px;
 }
@@ -87,15 +90,17 @@ hr {
 iframe {
     width: 100%;
 }
+
 .image1, .image2  {
     float: top;
-    size: relative;
-    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 li {
     list-style-type: none;
     align-content: center;
+    font-size: .75em;
 }
 
 .logo {
@@ -115,6 +120,29 @@ li {
     margin-bottom: .5em;
 }
 
-.home, .preston, .soda, .fish, .storm, .gallery {
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hide {
     display: none;
 }
+
+nav ul li a {
+    display: block;
+}
+
+nav ul li.active a{
+    color: #9FC6C1;
+    display: block;
+}
+
+
