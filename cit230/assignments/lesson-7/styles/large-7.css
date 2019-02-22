@@ -1,0 +1,118 @@
+@media screen and (min-width:605px) {
+    .home, .preston, .soda, .fish, .storm, .gallery {
+        display: inline;
+    }
+
+    body {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .image1 {
+        float: left;
+    }
+    
+    .image2 {
+        float: right;
+        margin-right: -.5em;
+    }
+
+    li {
+        display: inline;
+        padding: 1.5em;
+    }
+
+    .logo {
+        float: left;
+        margin: 0;
+    }
+
+    .article {
+        margin-top: 8px;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    footer {
+        font-size: .8em;
+        vertical-align: center;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .5em;
+    }
+
+    .headings {
+        text-align: left;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    iframe {
+        width: 50%;
+    }
+
+    .image1, .image2  {
+        padding-right: .5em;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .forecast {
+        display: table;
+        background-color:white;
+        color: #3F5A70;
+        padding: .5em;
+        margin-bottom: .5em;
+    }
+
+    main figure {
+        width: 35%;
+    }
+
+    .current {
+        margin-bottom: .5em;
+    }
+
+    .motto {
+        text-align: left;
+    }
+
+    .summary {
+        float: top;
+        margin-top: 8px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    th {
+        height: 25px;
+        width: 100%;
+    }
+
+    td>img {
+        width: 100%;
+    }
+
+    table, th, td {
+        width: 100%;
+        border: 1px solid #3F5A70;
+      }
+}
