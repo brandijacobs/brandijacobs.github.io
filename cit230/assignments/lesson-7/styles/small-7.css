@@ -1,6 +1,6 @@
 * {
     font-family: 'Noto Serif SC', serif;
-    /* border: 1px solid #f00 !important; */
+    border: 1px solid #f00 !important;
 }
 
 a {
@@ -28,8 +28,13 @@ body {
     margin-bottom: .5em;
 }
 
-.preston {
+/* .preston { 
     color: #9FC6C1;
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 footer {
@@ -121,6 +126,13 @@ li {
     font-size: .7em;
 }
 
+.shadow {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: white;
+    color: #3F5A70;
+}
+
 .summary {
     color: #3F5A70;
     background-color: white;
@@ -153,5 +165,4 @@ nav ul li.active a{
     color: #9FC6C1;
     display: block;
 }
-
 

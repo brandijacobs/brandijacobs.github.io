@@ -1,0 +1,8 @@
+/* find good min width */
+@media screen and (min-width:300px) and (max-width:604px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+}

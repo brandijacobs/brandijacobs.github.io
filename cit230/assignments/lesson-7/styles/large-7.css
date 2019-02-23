@@ -31,6 +31,10 @@
         margin-top: 8px;
     }
 
+    .shadow:hover {
+        /* box shadow */
+    }
+
     a:hover {
         font-weight: bold;
     }
@@ -77,6 +81,12 @@
         color: #3F5A70;
         padding: .5em;
         margin-bottom: .5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
     }
 
     main figure {
