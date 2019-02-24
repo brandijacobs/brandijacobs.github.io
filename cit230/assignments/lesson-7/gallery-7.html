@@ -13,11 +13,13 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
-            <section class="headings">
-                <h1>Whether the Weather</h1>
-                <div class="motto">Know Ahead of Time</div>
-            </section>         
+            <div id="header">
+                <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
+                <section class="headings">
+                    <h1>Whether the Weather</h1>
+                    <div class="motto">Know Ahead of Time</div>
+                </section>     
+            </div>     
             <nav>
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
@@ -36,7 +38,7 @@
             <section class="grid">
                 <figure class="shadow">
                     <img src="images/warm-snow.jpg" alt="warm snow day">
-                    <figcaption>"33 Degrees" by Michelle Wright</figcaption>
+                    <figcaption>"32 Degrees" by Michelle Wright</figcaption>
                 </figure>
                 <figure class="shadow">
                     <img src="images/purple-lightning.jpg" alt="purple lightening strike">
@@ -48,11 +50,11 @@
                 </figure>
                 <figure class="shadow">
                     <img src="images/partly-cloudy.jpg" alt="sun through snow">
-                    <figcaption>"Sunlight Shimmer" by Remi Chase"</figcaption>
+                    <figcaption>"Sunlight Shimmer" by Remi Chase</figcaption>
                 </figure>
                 <figure class="shadow">
                     <img src="images/road-snow.jpg" alt="snow covered road">
-                    <figcaption>"Deep & Heavy" by Marcus Peterson</figcaption>
+                    <figcaption>"Heavy & Deep" by Marcus Peterson</figcaption>
                 </figure>
                 <figure class="shadow">
                     <img src="images/idaho-spring.jpg" alt="spring idaho day">
@@ -62,6 +64,11 @@
         </main>
         <footer>
                 <p><span id="fullDate"></span> | Whether the Weather | Brandi A. Jacobs</p>
+                <div id="current weather">
+                        <span>Current Temperature: </span><span id="temp"></span><br>
+                        <span>Current Wind Speed: </span><span id="speed"></span><br>
+                        <span>Current Wind Chill: </span><span id="chill"></span>
+                </div>
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>

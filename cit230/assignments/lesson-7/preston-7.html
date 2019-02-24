@@ -13,11 +13,13 @@
 </head>
     <body>
         <header>
-            <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
-            <section class="headings">
-                <h1>Whether the Weather</h1>
-                <div class="motto">Know Ahead of Time</div>
-            </section>         
+            <div id="header">
+                <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
+                <section class="headings">
+                    <h1>Whether the Weather</h1>
+                    <div class="motto">Know Ahead of Time</div>
+                </section>  
+            </div>      
             <nav>
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
@@ -39,11 +41,6 @@
                         images/hero-small.jpg 1055w,
                         images/hero-large.jpg 1400w">
             </figure>
-            <div id="current weather">
-                <span>Current Temperature: </span><span id="temp"></span>
-                <span>Current Wind Speed: </span><span id="speed"></span>
-                <span>Current Wind Chill: </span><span id="chill"></span>
-            </div>
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem similique minima tempora recusandae adipisci voluptatibus harum accusantium, aperiam consequatur ea incidunt quo, excepturi vel nesciunt debitis. Officiis minima autem dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi esse corporis, nihil laboriosam cum eum quae saepe minima, itaque ipsum error, in deleniti dolores reiciendis exercitationem ex explicabo est. Fuga.</p>
@@ -86,6 +83,11 @@
         </main>
         <footer>
             <p><span id="fullDate"></span> | Whether the Weather | Brandi A. Jacobs</p>
+            <div id="current weather">
+                    <span>Current Temperature: </span><span id="temp"></span><br>
+                    <span>Current Wind Speed: </span><span id="speed"></span><br>
+                    <span>Current Wind Chill: </span><span id="chill"></span>
+            </div>
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>

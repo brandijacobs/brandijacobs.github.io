@@ -3,9 +3,61 @@
         display: inline;
     }
 
+    a:hover {
+        font-weight: bold;
+    }
+
+    .article {
+        margin-top: 8px;
+    }
+
     body {
         margin-left: .5em;
         margin-right: .5em;
+    }
+
+    .current {
+        margin-bottom: .5em;
+    }
+
+    footer {
+        font-size: .8em;
+        vertical-align: center;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .5em;
+    }
+
+    .forecast {
+        display: table;
+        background-color:white;
+        color: #3F5A70;
+        padding: .5em;
+        margin-bottom: .5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .headings {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    iframe {
+        width: 50%;
     }
 
     .image1 {
@@ -17,26 +69,34 @@
         margin-right: -.5em;
     }
 
+    .image1, .image2  {
+        padding-right: .5em;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
     li {
         display: inline;
         padding: 1.5em;
     }
 
     .logo {
-        float: left;
-        margin: 0;
+        width: 100px;
+        height: 100px;
+        align-self: flex-start;
     }
 
-    .article {
-        margin-top: 8px;
+    main {
+        margin-left: 10em;
+        margin-right: 10em;
     }
 
-    .shadow:hover {
-        /* box shadow */
+    main figure {
+        width: 35%;
     }
 
-    a:hover {
-        font-weight: bold;
+    .motto {
+        text-align: left;
     }
 
     #nav-toggle {
@@ -51,54 +111,8 @@
         display: none;
     }
 
-    footer {
-        font-size: .8em;
-        vertical-align: center;
-        padding-top: .25em;
-        padding-bottom: .25em;
-        padding-left: .5em;
-    }
-
-    .headings {
-        text-align: left;
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-    }
-
-    iframe {
-        width: 50%;
-    }
-
-    .image1, .image2  {
-        padding-right: .5em;
-        margin-left: 0;
-        margin-top: 0;
-    }
-
-    .forecast {
-        display: table;
-        background-color:white;
-        color: #3F5A70;
-        padding: .5em;
-        margin-bottom: .5em;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1em;
-    }
-
-    main figure {
-        width: 35%;
-    }
-
-    .current {
-        margin-bottom: .5em;
-    }
-
-    .motto {
-        text-align: left;
+    .shadow:hover {
+        box-shadow: 0 0 20px white;
     }
 
     .summary {
