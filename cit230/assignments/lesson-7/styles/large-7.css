@@ -44,12 +44,14 @@
 
     header {
         display: flex;
+        /* flex-direction: row; */
+        justify-content: flex-start;
+        justify-content: space-between;
     }
 
-    .header {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
+    /* .header {
+        
+    } */
 
     .headings {
         padding-top: 1.5em;
@@ -81,7 +83,7 @@
     }
 
     .logo {
-        width: 100px;
+        width: 120px;
         height: 100px;
         align-self: flex-start;
     }
@@ -97,6 +99,12 @@
 
     .motto {
         text-align: left;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
     }
 
     #nav-toggle {
