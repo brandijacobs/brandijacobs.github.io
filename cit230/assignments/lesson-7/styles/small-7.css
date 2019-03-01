@@ -181,3 +181,8 @@ nav ul li.active a{
     display: block;
 }
 
+@media screen and (max-width:299px) {
+/* hamburger
+5-day forecast
+font changes (size) */
+}
