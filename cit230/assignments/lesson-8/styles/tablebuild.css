@@ -4,23 +4,32 @@
 
 table {
     border-collapse: collapse;
-    box-shadow: 2px #628ca6;
+    box-shadow: 10px 10px 20px #628ca6;
+    text-align: center;
 }
 
 td, th{
     border: 1px solid silver;
 }
 
-td {
+tbody td {
     text-align: center;
-    padding: .5em;
+    padding: .475em;
+}
+
+thead td {
+    padding: .25em;
+}
+
+tfoot td {
+    padding: .75em;
 }
 
 th {
     background-color: #628ca6;
     color: white;
+    font-size: 1.2em;
     padding: .4em;
-    font-size: 1.25em;
 }
 tr:first-child{
     background-color: #7fb9c2 !important;
@@ -44,7 +53,8 @@ td:nth-child(2) {
 
 thead tr{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.75em;
+    padding: 2em;
 }
 
 tfoot tr{
