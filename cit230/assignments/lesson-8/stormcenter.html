@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/small-8.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium-7.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/large-7.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium-8.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/large-8.css">
 </head>
 
 <body>
@@ -36,11 +36,11 @@
     </header>
     <hr>
     <main>
-        <h2></h2>
+        <h2>Storm Center</h2>
         <form action="thanks.html" method="GET">
             <div>
                 <label for="fullName">Full Name: </label>
-                <input type="text" id="fullName" name="fullName" required>
+                <input type="text" id="fullName" name="fullName" pattern="[a-zA-z]{5,}" required>
             </div>
             <div>
                 <label for="email">Email: </label>
@@ -59,7 +59,44 @@
                 <input type="date" id="stormDate" name="stormDate">
             </div>
             <div>
-                <input type="submit" value="Submit">
+                <label for="stormType">Storm Type: </label>
+                <input type="text" id="stormType" name="stormType" list="list">
+                <datalist id="list" value="Please Select">
+                    <option>Flash Flood</option>
+                    <option>Hail</option>
+                    <option>Hurricane</option>
+                    <option>Thunderstorm</option>
+                    <option>Tornado</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="rating">Storm Severity (1-10): </label>
+                <input type="range" id="rating" name="stormDate" value="5" min="1" max="10" step="1"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		            <span id="ratingvalue">5</span>
+            </div>
+            <div>
+                <label>Storm Region:
+                    <select name="Select">
+                        <option value="">Please Select</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="danger">In Danger? </label>
+                <label><input type="radio" id="danger" name="danger" value="Yes"> Yes </label>
+                <label><input type="radio" id="danger" name="danger" value="Maybe"> Maybe </label>
+                <label><input type="radio" id="danger" name="danger" value="No" checked> No </label>
+            </div>
+            <div>
+                <label for="additional">Comments: </label>
+                <input type="textarea" id="additional" name="additional">
+            </div>
+            <div>
+                <input type="submit" value="Report">
             </div>
         </form>
     </main>
@@ -74,6 +111,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="stormseverity.js"></script>
 </body>
 
 </html>
