@@ -93,9 +93,11 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
+var heroes = jsonObj['townData'];
 var townData = request.response;
 
-document.getElementById("fishHavenMotto").innerHTML = townData.towns[1].motto;
+// document.getElementById("fishHavenMotto").innerHTML = townData.towns[1].motto;
+document.getElementById("fishHavenMotto").innerHTML = heroes.towns[1].averageRainfall;
 document.getElementById("fishHavenYear").innerHTML += townData.towns[1].yearFounded;
 document.getElementById("fishHavenPopulation").innerHTML += townData.towns[1].currentPopulation;
 document.getElementById("fishHavenRain").innerHTML += townData.towns[1].averageRainfall;
