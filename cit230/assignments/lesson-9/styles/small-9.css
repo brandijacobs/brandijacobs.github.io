@@ -234,6 +234,10 @@ label, select {
         justify-content: center;
     }
 
+    /* #homegrid {
+        
+    } */
+
     nav ul li.active a{
         color: #9FC6C1;
         display: block;

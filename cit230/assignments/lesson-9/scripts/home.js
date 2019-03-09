@@ -93,12 +93,19 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-
-
 var townData = request.response;
+
 document.getElementById("fishHavenMotto").innerHTML = townData.towns[1].motto;
-document.getElementById("fishHavenYear").innerHTML = townData.towns[1].yearFounded;
+document.getElementById("fishHavenYear").innerHTML += townData.towns[1].yearFounded;
 document.getElementById("fishHavenPopulation").innerHTML += townData.towns[1].currentPopulation;
+document.getElementById("fishHavenRain").innerHTML += townData.towns[1].averageRainfall;
+
 document.getElementById("prestonMotto").innerHTML = townData.towns[4].motto;
-document.getElementById("prestonYear").innerHTML = townData.towns[4].yearFounded;
-document.getElementById("prestonPopulation").innerHTML = townData.towns[4].currentPopulation;
+document.getElementById("prestonYear").innerHTML += townData.towns[4].yearFounded;
+document.getElementById("prestonPopulation").innerHTML += townData.towns[4].currentPopulation;
+document.getElementById("prestonRain").innerHTML += townData.towns[4].averageRainfall;
+
+document.getElementById("sodaSpringsMotto").innerHTML = townData.towns[5].motto;
+document.getElementById("sodaSpringsYear").innerHTML += townData.towns[5].yearFounded;
+document.getElementById("sodaSpringsPopulation").innerHTML += townData.towns[5].currentPopulation;
+document.getElementById("sodaSpringsRain").innerHTML += townData.towns[5].averageRainfall;
