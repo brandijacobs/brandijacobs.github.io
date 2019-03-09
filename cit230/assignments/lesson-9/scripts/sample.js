@@ -1,6 +1,6 @@
 var person = { 
     "name" : "Brother Thayne",
-    "location" : "Reaxburg, ID"
+    "location" : "Rexburg, ID"
 };
 console.log(person.name);
 document.write(person.location);

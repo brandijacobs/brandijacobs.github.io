@@ -1,0 +1,259 @@
+* {
+    font-family: 'Noto Serif SC', serif;
+    /* border: 1px solid #f00 !important; */
+}
+
+a {
+    text-decoration: none;
+    color: #3F5A70;
+}
+
+.article {
+    background-color:white;
+    color: #3F5A70;
+    margin-top: -1.5em;
+    padding: .5em;
+    margin-bottom: .5em;
+}
+
+body {
+    background-color: #3F5A70;
+    margin: .5em;
+}
+
+.contact {
+    background-color: white;
+    color: #3F5A70;
+    padding: 0.25em .5em;
+    margin-bottom: .5em;
+}
+
+.currentpage { 
+    color: #9FC6C1;
+}
+
+figcaption {
+    padding: 0.5em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer {
+    font-size: .6em;
+    background-color:#9FC6C1;
+    width: 100%;
+}
+
+.forecast {
+    display: none;
+}
+
+
+h1 {
+    margin-top: -.5em;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center;
+    background-color: white;
+    color:#3F5A70;
+    padding: .5em;
+    margin-bottom: 8px;
+}
+
+h3 {
+    margin-bottom: -8px;
+    font-size: 1.25em;
+}
+
+h4 {
+    margin-top: .5em;
+    font-size: .75em;
+}
+
+header {
+    background-color:white;
+    color: #3F5A70;
+    text-align: center;
+    size: relative;
+    padding-bottom: .5em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+    margin: .5em;
+}
+
+.hide {
+    display: block;
+}
+
+hr {
+    margin-bottom: -12px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.image1, .image2  {
+    float: top; 
+    margin-top: 0;
+    margin-left: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+form div {
+    margin-top: 5px;
+}
+
+main figure {
+    width: 100%;
+}
+
+/* li {
+    list-style-type: none;
+    align-content: center;
+    font-size: .75em;
+    padding: .5em;
+} */
+
+
+
+.logo {
+    border:2px solid white;
+    width: 45px;
+    height: 40px;
+    align-self: center;
+}
+
+main p {
+    background: white;
+    color: #3F5A70;
+    padding: .5rem;
+    margin-top: 0;
+}
+
+.motto {
+    margin-top: -1.5em;
+    font-size: .7em;
+}
+
+.shadow {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: white;
+    color: #3F5A70;
+    width: 100%;
+    border: 1px white solid;
+}
+
+.summary {
+    color: #3F5A70;
+    background-color: white;
+    margin-top: -1.5em;
+    padding: .5em;
+    margin-bottom: .5em;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+/* Form Format */
+
+form {
+    margin-bottom: .5rem;
+    background-color: white;
+    color: #3F5A70;
+    padding: .5em;
+}
+
+form div input, select {
+    margin-bottom: .5rem;
+    
+}
+
+label, select {
+    display: inline-block;
+    min-width: 180px;
+    margin-left: .5rem;
+}
+
+#danger {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+#rating {
+    min-width: 190px;
+}
+
+#stormDate {
+    min-width: 190px;
+}
+
+#additional {
+    display:block;
+    width: 380px;
+    height: 150px;
+    padding: 0px 10px;
+    margin-left: .5rem;
+    box-sizing: border-box;
+    resize: none;
+    text-align: start;
+}
+
+@media screen and (max-width:500px) {
+    /* hamburger
+    5-day forecast
+    font changes (size) */
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li.active a{
+        color: #9FC6C1;
+        display: block;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul.hide {
+        display: none;
+    }
+    
+    nav ul li a {
+        display: block;
+    }
+
+    form div input, select{
+        width: 100%;
+    }
+}

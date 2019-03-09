@@ -1,0 +1,158 @@
+@media screen and (min-width:605px) {
+    /* .home, .preston, .soda, .fish, .storm, .gallery {
+        display: inline;
+    } */
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    .article {
+        margin-top: 8px;
+    }
+
+    body {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .current {
+        margin-bottom: .5em;
+    }
+
+    footer {
+        font-size: .8em;
+        vertical-align: center;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .5em;
+    }
+
+    .forecast {
+        display: table;
+        background-color:white;
+        color: #3F5A70;
+        padding: .5em;
+        margin-bottom: .5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        justify-content: space-between;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .headings {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    iframe {
+        width: 50%;
+    }
+
+    .image1 {
+        float: left;
+    }
+    
+    .image2 {
+        float: right;
+        margin-right: -.5em;
+    }
+
+    .image1, .image2  {
+        padding-right: .5em;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    li {
+        display: inline-block;
+        align-content: flex-end;
+        padding: 1.5em;
+        justify-content: flex-start
+    }
+
+    .logo {
+        width: 120px;
+        height: 100px;
+        align-self: flex-start;
+    }
+
+    main {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+    main figure {
+        width: 35%;
+    }
+
+    .motto {
+        text-align: left;
+    }
+
+    nav {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .shadow:hover {
+        box-shadow: 0 0 20px white;
+    }
+
+    .summary {
+        float: top;
+        margin-top: 8px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    th {
+        height: 25px;
+        width: 100%;
+    }
+
+    td>img {
+        width: 100%;
+    }
+
+    table, th, td {
+        width: 100%;
+        border: 1px solid #3F5A70;
+      }
+
+    ul {
+        flex-direction: row;
+    }
+}
