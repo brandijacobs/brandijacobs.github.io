@@ -93,7 +93,6 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-var heroes = jsonObj['townData'];
 var townData = request.response;
 
 // document.getElementById("fishHavenMotto").innerHTML = townData.towns[1].motto;
