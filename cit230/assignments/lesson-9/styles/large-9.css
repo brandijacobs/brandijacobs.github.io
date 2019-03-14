@@ -1,4 +1,4 @@
-@media screen and (min-width:605px) {
+@media screen and (min-width:850px) {
     /* .home, .preston, .soda, .fish, .storm, .gallery {
         display: inline;
     } */
@@ -22,10 +22,8 @@
 
     footer {
         font-size: .8em;
-        vertical-align: center;
         padding-top: .25em;
         padding-bottom: .25em;
-        padding-left: .5em;
     }
 
     .forecast {
@@ -42,12 +40,12 @@
         column-gap: 1em;
     }
 
-    header {
+    /* header {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         justify-content: space-between;
-    }
+    } */
 
     .header {
         display: flex;
@@ -83,7 +81,10 @@
     li {
         display: inline-block;
         align-content: flex-end;
-        padding: 1.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
         justify-content: flex-start
     }
 
@@ -104,11 +105,13 @@
 
     .motto {
         text-align: left;
+        padding-top: .5rem;
     }
 
     nav {
         display: inline-flex;
         flex-direction: row;
+        
     }
 
     #nav-toggle {

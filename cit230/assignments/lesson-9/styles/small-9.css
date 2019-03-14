@@ -45,7 +45,6 @@ h4 {
 header {
     background-color:white;
     color: #3F5A70;
-    text-align: center;
     size: relative;
     padding-bottom: .5em;
 }
@@ -84,6 +83,13 @@ main p {
     color: #3F5A70;
     padding: .5rem;
     margin-top: 0;
+}
+
+nav, ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
 }
 
 /* Classes */
@@ -216,6 +222,7 @@ label, select {
 /* Homepage */
 #homegrid {
     margin-top: .5rem;
+    border-bottom:0;
 }
 
 #homegrid h3 {
@@ -268,4 +275,31 @@ label, select {
     form div input, select{
         width: 100%;
     }
+
+    /* home page */
+
+    #homegrid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: none;
+        margin-top: 0;
+        margin-bottom: .5rem;
+        border: 0;
+    }
+
+    #homegrid figcaption {
+        flex-direction: column;
+        width: 40%;
+    }
+
+    #homegrid h3 {
+        margin-top: 0;
+    }
+
+    #homegrid img {
+        width: 55%;
+        height: 55%;
+        padding: .5rem;
+    }
+
 }
