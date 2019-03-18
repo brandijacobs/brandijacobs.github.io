@@ -19,7 +19,7 @@ weatherRequest.onload = function() {
     document.getElementById("current-pressure").innerHTML = weatherData.main.pressure;
 }
 
-Forecast
+// Forecast
 var apiForecaststring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=a1e5e5a9c821a975cd2454f56d137abf&units=imperial';
 var forecastRequest = new XMLHttpRequest();
 forecastRequest.open('GET', apiForecaststring, true);
