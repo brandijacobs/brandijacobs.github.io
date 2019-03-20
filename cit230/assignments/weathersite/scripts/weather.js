@@ -28,13 +28,16 @@ forecastRequest.send();
 
 forecastRequest.onload = function() {
     var forecastData = forecastRequest.response;
+    console.log(forecastData);
 
     var startTemp = [];
+    // Using 1 due to id start of 1
     var day = 1;
+    var icon = [];
     forecastData.list.forEach(hour => {
         if (hour.dt_txt.includes('18:00:00')) {
             startTemp[day] = hour.main.temp.toFixed(0);
-            // var icon = "http://openweathermap.org/img/w/" + hour.weather.icon + ".png";
+            icon[day] = "http://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
             day++;
         }
     });
@@ -52,8 +55,7 @@ forecastRequest.onload = function() {
 
     for (var i = 1; i <= 5; i++) {
         document.getElementById('day' + i).innerHTML = startTemp[i] + '&deg;F';
-
-        // document.getElementById('forecastIcon' + i).setAttribute('src', icon);
+        document.getElementById('forecastIcon' + i).setAttribute('src', icon[i - 1]);
         if (j <= 6) {
             document.getElementById('dayName' + i).innerHTML = dayName[j];
         }

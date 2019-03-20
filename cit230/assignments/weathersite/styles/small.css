@@ -195,6 +195,18 @@ label, select {
     margin-left: .5rem;
 }
 
+.current-icon {
+   display: flex;
+}
+
+.weather-summary {
+   float: top;
+}
+
+/* .weather-summary span {
+    flex-direction: column;
+} */
+
 #danger {
     display: inline-block;
     margin-bottom: 1rem;
