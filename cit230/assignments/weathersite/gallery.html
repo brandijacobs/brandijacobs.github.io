@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device width, initial-scale=1, maximum-scale=1"> 
+        <title>Gallery</title>
+        <meta name="description" content="Whether the Weather">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/small-10.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/medium-10.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/large-10.css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
+                <section class="headings">
+                    <h1>Whether the Weather</h1>
+                    <div class="motto">Know Ahead of Time</div>
+                </section>     
+            </div>     
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="home.html" class="home">Home</a></li> 
+                    <li><a href="preston-10.html" class="preston">Preston</a></li>
+                    <li><a href="#" class="soda">Soda Springs</a></li>
+                    <li><a href="#" class="fish">Fish Haven</a></li>
+                    <li><a href="stormcenter.html" class="storm">Storm Center</a></li>
+                    <li><a href="#" class="currentpage">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <h2>Weather Gallery</h2>
+            <section class="grid">
+                <figure class="shadow">
+                    <img src="images/warm-snow.jpg" alt="warm snow day">
+                    <figcaption>"32 Degrees" by Michelle Wright</figcaption>
+                </figure>
+                <figure class="shadow">
+                    <img src="images/purple-lightning.jpg" alt="purple lightening strike">
+                    <figcaption>"Purple Power" by Dan Rowlings</figcaption>
+                </figure>
+                <figure class="shadow">
+                    <img src="images/mountain-valley.jpg" alt="top of mountain">
+                    <figcaption>"Hiker's Dream" by Cecilia Madrick</figcaption>
+                </figure>
+                <figure class="shadow">
+                    <img src="images/partly-cloudy.jpg" alt="sun through snow">
+                    <figcaption>"Sunlight Shimmer" by Remi Chase</figcaption>
+                </figure>
+                <figure class="shadow">
+                    <img src="images/road-snow.jpg" alt="snow covered road">
+                    <figcaption>"Heavy & Deep" by Marcus Peterson</figcaption>
+                </figure>
+                <figure class="shadow">
+                    <img src="images/idaho-spring.jpg" alt="spring idaho day">
+                    <figcaption>"Idaho Living" by Christopher Finn</figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer>
+                <p><span id="fullDate"></span> | Whether the Weather | Brandi A. Jacobs</p>
+                <div id="current weather">
+                        <span>Current Temperature: </span><span id="temp"></span><br>
+                        <span>Current Wind Speed: </span><span id="speed"></span><br>
+                        <span>Current Wind Chill: </span><span id="chill"></span>
+                </div>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>  
+    </body>
+</html>
