@@ -30,13 +30,50 @@ forecastRequest.onload = function() {
     var forecastData = forecastRequest.response;
     console.log(forecastData);
 
-    var startTemp = [];
+    var highTemp = [];
     // Using 1 due to id start of 1
-    var day = 1;
-    var icon = [];
+    var icon = [];    
+
+    if (today.getHours() < 15) {
+        var day = 1;
+        forecastData.list.forEach(hour => {
+            if (hour.dt_txt.includes('21:00:00')) {
+                highTemp[day] = hour.main.temp_max.toFixed(0);
+                icon[day] = "http://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
+                day++;
+            }
+        });
+    
+        var dayName = new Array(7);
+        dayName[0] = "Sunday";
+        dayName[1] = "Monday";
+        dayName[2] = "Tuesday";
+        dayName[3] = "Wednesday";
+        dayName[4] = "Thursday";
+        dayName[5] = "Friday";
+        dayName[6] = "Saturday";
+        
+        var j = today.getDay();
+    
+        for (var i = 1; i <= 5; i++) {
+            document.getElementById('day' + i).innerHTML = highTemp[i] + '&deg;F';
+            document.getElementById('forecastIcon' + i).setAttribute('src', icon[i]);
+            if (j <= 6) {
+                document.getElementById('dayName' + i).innerHTML = dayName[j];
+            }
+            else {
+                j = 0;
+                document.getElementById('dayName' + i).innerHTML = dayName[j];
+            }
+            j++;
+        }
+    }
+
+    else {
+    var day = 0;
     forecastData.list.forEach(hour => {
-        if (hour.dt_txt.includes('18:00:00')) {
-            startTemp[day] = hour.main.temp.toFixed(0);
+        if (hour.dt_txt.includes('21:00:00')) {
+            highTemp[day] = hour.main.temp_max.toFixed(0);
             icon[day] = "http://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
             day++;
         }
@@ -54,9 +91,9 @@ forecastRequest.onload = function() {
     var j = today.getDay();
 
     for (var i = 1; i <= 5; i++) {
-        document.getElementById('day' + i).innerHTML = startTemp[i] + '&deg;F';
+        document.getElementById('day' + i).innerHTML = highTemp[i] + '&deg;F';
         document.getElementById('forecastIcon' + i).setAttribute('src', icon[i - 1]);
-        if (j <= 6) {
+        if (j <= 5) {
             document.getElementById('dayName' + i).innerHTML = dayName[j];
         }
         else {
@@ -65,4 +102,5 @@ forecastRequest.onload = function() {
         }
         j++;
     }
+}
 }

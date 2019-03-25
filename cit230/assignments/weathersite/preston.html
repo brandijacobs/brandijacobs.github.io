@@ -6,6 +6,7 @@
         <title>Whether the Weather</title>
         <meta name="description" content="Whether the Weather">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+        <link rel="icon" type="image/jpg" href="images/suncloud-logo.jpg" >
         <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
         <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
@@ -35,6 +36,20 @@
         <hr>
         <main>
             <h2>Preston, ID</h2>
+                <section class="summary">
+                    <h3>Weather Summary</h3>
+                    <p class="weather-summary">
+                        <img alt="Current Weather" id="current-icon" src="#"> <br>
+                        Current Temperature:
+                        <span id="current-temp"></span> &deg;F <br>
+                        <span>Current Wind Speed: </span><span id="current-speed"></span> mph<br>
+                        <span>Current Wind Chill: </span><span id="current-chill"></span> &deg;F <br>
+                        Current Humidity:
+                        <span id="current-humidity"></span> % <br>
+                        Current Pressure:
+                        <span id="current-pressure"></span> HPA <br>
+                    </p>
+                </section>
             <article class="forecast">
                 <h3 class="current">5-Day Forecast</h3>
                 <table>
@@ -46,13 +61,13 @@
                         <th id="dayName5"></th>
                     </tr>
                     <tr>
-                        <td><img id="forecastIcon1"></td>
-                        <td><img id="forecastIcon2"></td>
-                        <td><img id="forecastIcon3"></td>
-                        <td><img id="forecastIcon4"></td>
-                        <td><img id="forecastIcon5"></td>
+                        <td><img id="forecastIcon1" alt="Forecast Icon"></td>
+                        <td><img id="forecastIcon2" alt="Forecast Icon"></td>
+                        <td><img id="forecastIcon3" alt="Forecast Icon"></td>
+                        <td><img id="forecastIcon4" alt="Forecast Icon"></td>
+                        <td><img id="forecastIcon5" alt="Forecast Icon"></td>
                     </tr>
-                    <tr class="">
+                    <tr>
                         <td id="day1"></td>
                         <td id="day2"></td>
                         <td id="day3"></td>
@@ -61,38 +76,33 @@
                     </tr>
                 </table>
             </article>
-            <section class="summary">
-                <h3>Weather Summary</h3>
-                <p class="weather-summary">
-                    <img alt="Current Weather" id="current-icon" src="#"> <br>
-                    Current Temperature:
-                    <span id="current-temp"></span> &deg;F <br>
-                    <span>Current Wind Speed: </span><span id="current-speed"></span> mph<br>
-                    <span>Current Wind Chill: </span><span id="current-chill"></span> &deg;F <br>
-                    Current Humidity:
-                    <span id="current-humidity"></span> % <br>
-                    Current Pressure:
-                    <span id="current-pressure"></span> HPA <br>                    
-                </p>
-            </section>
             <figure class="image2">
-                <img src="images/preston-brick-small.jpg" alt="Preston Sign"
-                    srcset="
-                        images/preston-brick-small.jpg 400w, 
-                        images/preston-brick-large.jpg 570w">
+                <img src="images/preston-small.jpg" alt="Napolean Dynamite" srcset="
+                                    images/preston-small.jpg 400w, 
+                                    images/preston-medium.jpg 500w,
+                                    images/preston-large.jpg 850w">
             </figure>
             <article class="article">
-                <h3>Article Title</h3>
-                <h4>by Author</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci enim quidem corporis nulla suscipit. Libero, nesciunt culpa. Soluta exercitationem vero distinctio quo eaque natus magni beatae cupiditate, dicta dolorem excepturi. 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed necessitatibus et animi ad voluptates aliquam officia molestias odio, iusto maxime temporibus sint incidunt exercitationem, maiores, tempore quaerat debitis tenetur provident?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sit nisi eum. Quidem reprehenderit assumenda ipsam cumque! Laboriosam sequi excepturi, tempore labore expedita quibusdam commodi odio, laudantium ipsa perferendis similique.
+                <h3>Gosh! Preston residents look back on "Napoleon Dynamite" 12 years later</h3>
+                <h4>by Clayton Gefre  |  June 11, 2016</h4>
+                <p>Twelve years ago, Preston was a town like any other, a relatively quiet part of southern Idaho with a population of just under 5,000 people. Known for That Famous Preston Night Rodeo and its close proximity to the site of the Bear River Massacre, most of the United States would likely have been unable to locate it on a map.<br> <br>
+                    Things would change for the small Franklin County town with the release of "Napoleon Dynamite" in 2004. The quotable comedy film written and directed by Preston native Jared Hess became a surprise hit, earning $46.1 million at the box office on a budget of only $400,000. As the site of the film, Preston gained a foothold in pop culture.<br> <br>                    
+                    "Some people worry that the movie gives us a bad name,"" Preston resident Rhonda Gregerson said. “But really, it gives us a great name. The movie put us right on the map; it’s our golden goose.” <br> <br>
+                    (Read the rest at 
+                    <a href="https://www.hjnews.com/allaccess/gosh-preston-residents-look-back-on-napoleon-dynamite-years-later/article_480441ef-2e53-53d3-b4a3-e245385720a6.html")>Herald Journal News</a>
+                    ).
                 </p>
             </article>
             <section class="contact">
                 <h3>Contact Information</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reiciendis, ullam corrupti nam ratione facilis sit tenetur facere hic porro veritatis inventore accusantium eaque provident. Dignissimos soluta accusamus id facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quis voluptatibus saepe quasi alias, est hic provident sit eligendi tenetur illo perspiciatis magnam nam assumenda eaque neque, accusamus placeat sed.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385347842!2d-111.9153446090199!3d42.09974162633639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549746426922" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <p>
+                    Whether the Whether<br>
+                    Brigham Young University-Idaho<br>
+                    525 S Center St, Rexburg, ID 83460<br>
+                    (208) 123-4567<br>
+                    Hours: M-F 9am - 5pm <br>
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0013994034507!2d-111.78535588449705!3d43.81433037911617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham+Young+University-Idaho!5e0!3m2!1sen!2sus!4v1553367949287" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </section>
         </main>
         <footer>
