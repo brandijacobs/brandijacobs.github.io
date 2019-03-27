@@ -57,6 +57,7 @@ header {
 }
 
 header img, .headings {
+    display: inline-block;
 	vertical-align: middle;
     margin: .5em;
 }
