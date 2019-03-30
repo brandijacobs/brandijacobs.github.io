@@ -34,7 +34,7 @@ forecastRequest.onload = function() {
     // Using 1 due to id start of 1
     var icon = [];    
 
-    if (today.getHours() < 15) {
+    if (today.getHours() < 17) {
         var day = 1;
         forecastData.list.forEach(hour => {
             if (hour.dt_txt.includes('21:00:00')) {
