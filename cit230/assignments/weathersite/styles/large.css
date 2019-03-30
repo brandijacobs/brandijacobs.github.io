@@ -3,6 +3,10 @@
         font-weight: bold;
     }
 
+    #additional {
+        width: 380px;
+    }
+
     .article {
         margin-top: 8px;
     }

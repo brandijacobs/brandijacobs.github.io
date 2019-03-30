@@ -171,7 +171,7 @@ figcaption {
 
 /* Form Format */
 
-div input {
+div input, div select {
     display: block;
     margin: .5rem .5rem;
     margin-bottom: 1rem !important;
@@ -196,9 +196,18 @@ form div input, select {
     margin-bottom: .5rem;
 }
 
-label, select {
+label {
     display: block;
     margin-left: .5rem;
+}
+
+select {
+    display: block;
+    margin-left: 0rem !important;
+}
+
+.radio-less {
+    margin-bottom:0 !important;
 }
 
 .current-icon {
@@ -219,16 +228,15 @@ label, select {
 }
 
 #rating {
-    min-width: 190px;
+    min-width: 240px;
 }
 
 #stormDate {
-    min-width: 190px;
+    min-width: 240px;
 }
 
 #additional {
     display:block;
-    width: 380px;
     height: 150px;
     padding: 0px 10px;
     margin-left: .5rem;
@@ -312,9 +320,6 @@ label, select {
         display: block;
     }
 
-    form div input, select{
-        width: 100%;
-    }
 /* 5-day forecast */
     .header {
         display: flex;

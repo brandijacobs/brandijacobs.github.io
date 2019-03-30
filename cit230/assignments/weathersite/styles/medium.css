@@ -33,6 +33,10 @@
         height: 70px;
     }
 
+    #additional {
+        width: 380px;
+    }
+
     /* hamburger menu */
     .hide {
         display: block;
