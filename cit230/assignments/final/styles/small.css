@@ -1,21 +1,21 @@
 * {
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'Cormorant Garamond', serif;
     /* border: 1px solid #f00 !important; */
 }
 
 a {
     text-decoration: none;
-    color: #3F5A70;
+    color: black;
 }
 
 body {
-    background-color: #3F5A70;
+    background-image: url(marble-background.jpg);
     margin: .5em;
 }
 
 footer {
     font-size: .6em;
-    background-color:#9FC6C1;
+    background-color:#B58999;
     width: 100%;
 }
 
@@ -32,9 +32,9 @@ h1 {
 h2 {
     text-align: center;
     background-color: white;
-    color:#3F5A70;
     padding: .5em;
     margin-bottom: 8px;
+    border-bottom: 2px solid #6B2A3D;
 }
 
 h3 {
@@ -74,6 +74,10 @@ figure img {
     width: 100%;
 }
 
+main {
+    background: url('images/marble-background.png') cover no-repeat;
+}
+
 main figure {
     width: 100%;
 }
@@ -86,10 +90,16 @@ main p {
 }
 
 nav, ul {
+    background-color: #F7F7F7;
+    font-size: 1.25rem;
     width: 100%;
     text-align: center;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: .5rem 2rem;
 }
 
 /* Classes */
@@ -109,13 +119,21 @@ nav, ul {
 }
 
 .currentpage { 
-    color: #9FC6C1;
+    color:#B58999;
+    font-style: italic;
+    padding: .5rem 2rem;
 }
 
 .forecast {
     display: none;
 }
+header {
+    padding-bottom: 0rem;
+}
 
+hr {
+    margin-top: .25rem;
+}
 .header {
     display: flex;
     flex-direction: column;
@@ -130,9 +148,10 @@ nav, ul {
 
 .logo {
     border:2px solid white;
-    width: 45px;
-    height: 40px;
+    width: 35px;
+    height: 45px;
     align-self: center;
+    margin-top: 0;
 }
 
 .motto {
