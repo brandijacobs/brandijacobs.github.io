@@ -11,7 +11,7 @@ weatherRequest.onload = function() {
     var temp = weatherData.main.temp;
     var speed = weatherData.wind.speed;
 
-    document.getElementById("current-icon").setAttribute("src", 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
+    document.getElementById("current-icon").setAttribute("src", 'https://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
     document.getElementById("current-temp").innerHTML = temp.toFixed(0);
     document.getElementById("current-speed").innerHTML = weatherData.wind.speed;
     document.getElementById("current-chill").innerHTML = (35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16)).toFixed(0);
@@ -40,7 +40,7 @@ forecastRequest.onload = function() {
         forecastData.list.forEach(hour => {
             if (hour.dt_txt.includes('21:00:00')) {
                 highTemp[day] = hour.main.temp_max.toFixed(0);
-                icon[day] = "http://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
+                icon[day] = "https://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
                 day++;
             }
         });
@@ -75,7 +75,7 @@ forecastRequest.onload = function() {
     forecastData.list.forEach(hour => {
         if (hour.dt_txt.includes('21:00:00')) {
             highTemp[day] = hour.main.temp_max.toFixed(0);
-            icon[day] = "http://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
+            icon[day] = "https://openweathermap.org/img/w/" + hour.weather[0].icon + ".png";
             day++;
         }
     });
