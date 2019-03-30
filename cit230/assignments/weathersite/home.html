@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
-        <title>Home</title>
-        <meta name="description" content="Whether the Weather">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
-    </head>
-    <body>
-        <header>
-            <div class="header">
-                <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
-                <section class="headings">
-                    <h1>Whether the Weather</h1>
-                    <div class="motto">Know Ahead of Time</div>
-                </section>     
-            </div>     
-            <nav>
-                <button onclick="toggleMenu()">&#9776;</button>
-                <ul id="primaryNav" class="hide">
-                    <li><a href="#" class="currentpage">Home</a></li> 
-                    <li><a href="preston.html">Preston</a></li>
-                    <li><a href="sodasprings.html">Soda Springs</a></li>
-                    <li><a href="fishhaven.html">Fish Haven</a></li>
-                    <li><a href="stormcenter.html">Storm Center</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </nav>
-        </header>
-        <hr>
-        <main>
-            <h2>Home</h2>
-            <section class="grid">
-                <figure class="shadow" id="homegrid"> <a href="fishhaven.html">
-                    <figcaption>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home</title>
+    <meta name="description" content="Whether the Weather">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
+            <section class="headings">
+                <h1>Whether the Weather</h1>
+                <div class="motto">Know Ahead of Time</div>
+            </section>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#" class="currentpage">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Home</h2>
+        <section class="grid">
+            <figure class="shadow" id="homegrid">
+                <figcaption> <a href="fishhaven.html">
                         <h3>Fish Haven</h3>
                         <h4>
                             <span id="fishHavenMotto"></span>
@@ -51,12 +53,12 @@
                         <h4>Annual Rain Fall:
                             <span id="fishHavenRain"></span>
                         </h4>
-                    </figcaption>
-                    <img src="images/fish_haven.jpg">
-                </a>
-                </figure>
-                <figure class="shadow" id="homegrid"><a href="preston.html">
-                    <figcaption>
+                    </a>
+                </figcaption>
+                <img src="images/fish_haven.jpg" alt="Fish Haven"> <a href="fishhaven.html"></a>
+            </figure>
+            <figure class="shadow" id="homegrid">
+                <figcaption> <a href="preston.html">
                         <h3>Preston</h3>
                         <h4>
                             <span id="prestonMotto"></span>
@@ -70,12 +72,12 @@
                         <h4>Annual Rain Fall:
                             <span id="prestonRain"></span>
                         </h4>
-                    </figcaption>
-                    <img src="images/preston-landscape.jpg">
                     </a>
-                </figure>
-                <figure class="shadow" id="homegrid"> <a href="sodasprings.html">
-                    <figcaption>
+                </figcaption>
+                <img src="images/preston-landscape.jpg" alt="Preston Landscape"> <a href="preston.html"></a>
+            </figure>
+            <figure class="shadow" id="homegrid">
+                <figcaption> <a href="sodasprings.html">
                         <h3>Soda Springs</h3>
                         <h4>
                             <span id="sodaSpringsMotto"></span>
@@ -89,17 +91,18 @@
                         <h4>Annual Rain Fall:
                             <span id="sodaSpringsRain"></span>
                         </h4>
-                    </figcaption>
-                    <img src="images/soda-springs.jpg">
                     </a>
-                </figure>
-            </section>
-        </main>
-        <footer>
-            <p><span id="fullDate"></span> | Whether the Weather | Brandi A. Jacobs</p>
-        </footer>
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/currentdate.js"></script> 
-        <script src="scripts/home.js"></script>  
-    </body>
+                </figcaption>
+                <img src="images/soda-springs.jpg" alt="Soda Springs"> <a href="sodasprings.html"></a>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p><span id="fullDate"></span> | Whether the Weather | Brandi A. Jacobs</p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+
 </html>

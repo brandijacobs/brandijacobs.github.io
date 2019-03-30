@@ -1,115 +1,128 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device width, initial-scale=1, maximum-scale=1"> 
-        <title>Whether the Weather</title>
-        <meta name="description" content="Whether the Weather">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
-        <link rel="icon" type="image/jpg" href="images/suncloud-logo.jpg" >
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device width, initial-scale=1, maximum-scale=1">
+    <title>Whether the Weather</title>
+    <meta name="description" content="Whether the Weather">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="images/suncloud-logo.jpg">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
 </head>
-    <body>
-        <header>
-            <div class="header">
-                <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
-                <section class="headings">
-                    <h1>Whether the Weather</h1>
-                    <div class="motto">Know Ahead of Time</div>
-                </section>  
-            </div>
-            <nav>
-                <button onclick="toggleMenu()">&#9776;</button>
-                <ul id="primaryNav" class="hide">
-                    <li><a href="home.html">Home</a></li> 
-                    <li><a href="preston.html">Preston</a></li>
-                    <li><a href="#" class="currentpage">Soda Springs</a></li>
-                    <li><a href="fishhaven.html">Fish Haven</a></li>
-                    <li><a href="stormcenter.html">Storm Center</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </nav>   
-        </header>
-        <hr>
-        <main>
-            <h2>Soda Springs, ID</h2>
-                <section class="summary">
-                    <h3>Weather Summary</h3>
-                    <p class="weather-summary">
-                        <img alt="Current Weather" id="current-icon" src="#"> <br>
-                        Current Temperature:
-                        <span id="current-temp"></span> &deg;F <br>
-                        <span>Current Wind Speed: </span><span id="current-speed"></span> mph<br>
-                        <span>Current Wind Chill: </span><span id="current-chill"></span> &deg;F <br>
-                        Current Humidity:
-                        <span id="current-humidity"></span> % <br>
-                        Current Pressure:
-                        <span id="current-pressure"></span> HPA <br>
-                    </p>
-                </section>
-            <article class="forecast">
-                <h3 class="current">5-Day Forecast</h3>
-                <table>
-                    <tr>
-                        <th id="dayName1"></th>
-                        <th id="dayName2"></th>
-                        <th id="dayName3"></th>
-                        <th id="dayName4"></th>
-                        <th id="dayName5"></th>
-                    </tr>
-                    <tr>
-                        <td><img id="forecastIcon1" alt="Forecast Icon"></td>
-                        <td><img id="forecastIcon2" alt="Forecast Icon"></td>
-                        <td><img id="forecastIcon3" alt="Forecast Icon"></td>
-                        <td><img id="forecastIcon4" alt="Forecast Icon"></td>
-                        <td><img id="forecastIcon5" alt="Forecast Icon"></td>
-                    </tr>
-                    <tr>
-                        <td id="day1"></td>
-                        <td id="day2"></td>
-                        <td id="day3"></td>
-                        <td id="day4"></td>
-                        <td id="day5"></td>
-                    </tr>
-                </table>
-            </article>
-            <figure class="image2">
-                <img src="images/soda-springs-small.jpg" alt="Napolean Dynamite" srcset="
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="images/Brandi-SunCloud-Logo.jpg" width=120 alt="Logo">
+            <section class="headings">
+                <h1>Whether the Weather</h1>
+                <div class="motto">Know Ahead of Time</div>
+            </section>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#" class="currentpage">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Soda Springs, ID</h2>
+        <section class="summary">
+            <h3>Weather Summary</h3>
+            <p class="weather-summary">
+                <img alt="Current Weather" id="current-icon" src="#"> <br>
+                Current Temperature:
+                <span id="current-temp"></span> &deg;F <br>
+                <span>Current Wind Speed: </span><span id="current-speed"></span> mph<br>
+                <span>Current Wind Chill: </span><span id="current-chill"></span> &deg;F <br>
+                Current Humidity:
+                <span id="current-humidity"></span> % <br>
+                Current Pressure:
+                <span id="current-pressure"></span> HPA <br>
+            </p>
+        </section>
+        <article class="forecast">
+            <h3 class="current">5-Day Forecast</h3>
+            <table>
+                <tr>
+                    <th id="dayName1"></th>
+                    <th id="dayName2"></th>
+                    <th id="dayName3"></th>
+                    <th id="dayName4"></th>
+                    <th id="dayName5"></th>
+                </tr>
+                <tr>
+                    <td><img src="" id="forecastIcon1" alt="Forecast Icon"></td>
+                    <td><img src="" id="forecastIcon2" alt="Forecast Icon"></td>
+                    <td><img src="" id="forecastIcon3" alt="Forecast Icon"></td>
+                    <td><img src="" id="forecastIcon4" alt="Forecast Icon"></td>
+                    <td><img src="" id="forecastIcon5" alt="Forecast Icon"></td>
+                </tr>
+                <tr>
+                    <td id="day1"></td>
+                    <td id="day2"></td>
+                    <td id="day3"></td>
+                    <td id="day4"></td>
+                    <td id="day5"></td>
+                </tr>
+            </table>
+        </article>
+        <figure class="image2">
+            <img src="images/soda-springs-small.jpg" alt="Napolean Dynamite" srcset="
                                     images/soda-springs-small.jpg 400w, 
                                     images/soda-springs-medium.jpg 500w,
                                     images/soda-springs-large.jpg 850w">
-            </figure>
-            <article class="article">
-                <h3>Picturing history: Soda Springs, Idaho</h3>
-                <h4>by Kenneth Mays  |  August 30, 2017</h4>
-                <p>Located in Caribou County of southeastern Idaho, the little town of Soda Springs was an unusual but welcome stop on the Oregon Trail. Travelers enjoyed bathing in the natural mineral springs that bubble out of the earth there. The site became a landmark along the trail and a first destination to travelers in general.<br> <br>
-                    A state of Idaho interpretive panel near the town notes that Col. Patrick E. Connor (from Fort Douglas, Utah) established a settlement called Morristown, and adjacent army post near the mineral springs in 1863. In subsequent years, the population began to dwindle. In 1870, LDS Church President Brigham Young established what is present-day Soda Springs just east of Connor’s location.<br> <br>                    
-                    In the early 1870s, the Mormon settlers built a cabin to be a summer home for President Young at the site he established. He set up the wide streets and square blocks of the settlement. <br> <br>
-                    (Read the rest at 
-                    <a href="https://www.deseretnews.com/article/865687761/Picturing-history-Soda-Springs-Idaho.html")>Deseret News</a>
-                    ).
-                </p>
-            </article>
-            <section class="contact">
-                <h3>Contact Information</h3>
-                <p>
-                    Whether the Whether<br>
-                    Brigham Young University-Idaho<br>
-                    525 S Center St, Rexburg, ID 83460<br>
-                    (208) 123-4567<br>
-                    Hours: M-F 9am - 5pm <br>
-                </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0013994034507!2d-111.78535588449705!3d43.81433037911617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham+Young+University-Idaho!5e0!3m2!1sen!2sus!4v1553367949287" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </section>
-        </main>
-        <footer>
-            <p><span id="fullDate"></span> | Whether the Weather | Brandi A. Jacobs</p>
-        </footer>
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/currentdate.js"></script>
-        <script src="scripts/soda-springs-weather.js"></script>
-    </body>
+        </figure>
+        <article class="article">
+            <h3>Picturing history: Soda Springs, Idaho</h3>
+            <h4>by Kenneth Mays | August 30, 2017</h4>
+            <p>Located in Caribou County of southeastern Idaho, the little town of Soda Springs was an unusual but
+                welcome stop on the Oregon Trail. Travelers enjoyed bathing in the natural mineral springs that bubble
+                out of the earth there. The site became a landmark along the trail and a first destination to travelers
+                in general.<br> <br>
+                A state of Idaho interpretive panel near the town notes that Col. Patrick E. Connor (from Fort Douglas,
+                Utah) established a settlement called Morristown, and adjacent army post near the mineral springs in
+                1863. In subsequent years, the population began to dwindle. In 1870, LDS Church President Brigham Young
+                established what is present-day Soda Springs just east of Connor’s location.<br> <br>
+                In the early 1870s, the Mormon settlers built a cabin to be a summer home for President Young at the
+                site he established. He set up the wide streets and square blocks of the settlement. <br> <br>
+                (Read the rest at
+                <a href="https://www.deseretnews.com/article/865687761/Picturing-history-Soda-Springs-Idaho.html">Deseret
+                    News</a>
+                ).
+            </p>
+        </article>
+        <section class="contact">
+            <h3>Contact Information</h3>
+            <p>
+                Whether the Whether<br>
+                Brigham Young University-Idaho<br>
+                525 S Center St, Rexburg, ID 83460<br>
+                (208) 123-4567<br>
+                Hours: M-F 9am - 5pm <br>
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0013994034507!2d-111.78535588449705!3d43.81433037911617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham+Young+University-Idaho!5e0!3m2!1sen!2sus!4v1553367949287"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <p><span id="fullDate"></span> | Whether the Weather | Brandi A. Jacobs</p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/soda-springs-weather.js"></script>
+</body>
+
 </html>
