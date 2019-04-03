@@ -8,10 +8,9 @@ a {
     color: black;
 }
 
-body {
-    background-image: url(marble-background.jpg);
-    margin: .5em;
-}
+/* body {
+    background-image: url(../images/marble-background.jpg);
+} */
 
 footer {
     font-size: .6em;
@@ -30,11 +29,9 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     background-color: white;
     padding: .5em;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #6B2A3D;
+    margin: 0rem 1rem;
 }
 
 h3 {
@@ -74,10 +71,6 @@ figure img {
     width: 100%;
 }
 
-main {
-    background: url('images/marble-background.png') cover no-repeat;
-}
-
 main figure {
     width: 100%;
 }
@@ -98,11 +91,25 @@ nav, ul {
     padding: 0;
 }
 
+p {
+    font-size: 1.25rem;
+    margin: 0rem 1rem; 
+}
+
 ul li {
     padding: .5rem 2rem;
 }
 
 /* Classes */
+.aboutTemple {
+    position: absolute;
+    z-index: 1000;
+    top: 200px;
+    left: 100px;
+    width: 25%;
+    opacity: .85;
+}
+
 .article {
     background-color:white;
     color: #3F5A70;
@@ -157,6 +164,30 @@ hr {
 .motto {
     margin-top: -1.5em;
     font-size: .7em;
+}
+
+.parallax-home {
+    background-image: url("../images/provo-city-center-large.jpg");
+    height: 425px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:-1rem;
+}
+
+.parallax-temples {
+    background-image: url("../images/washington-dc-summer.jpg");
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:-1rem;
+}
+
+.smallerFont {
+    font-size: 1rem;
 }
 
 .summary {
@@ -289,8 +320,12 @@ label, select {
     .image1 {
         display: none;
     }
+
+    ul {
+        justify-content: start;
+    }
     
-    li {
+    .hide li {
         list-style-type: none;
         align-content: center;
         font-size: .75em;

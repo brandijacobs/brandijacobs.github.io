@@ -1,10 +1,37 @@
 [
     {
         "name": "Rexburg Idaho Temple",
-        "address": "Rexburg, Idaho, United States",
-        "telephone": "",
+        "address": "750 S 2nd E, Rexburg, Idaho, United States",
+        "telephone": "(208) 656-0880",
         "email": "",
-        "dedicated": "2008-02-10",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "ordinance schedule": "",
+        "session schedule": [
+            "6:00 AM",
+            "6:45 AM",
+            "7:30 AM",
+            "8:15 AM",
+            "9:00 AM",
+            "9:45 AM",
+            "10:30 AM",
+            "11:15 AM",
+            "12:00 PM",
+            "12:45 PM",
+            "1:30 PM",
+            "2:15 PM",
+            "3:00 PM",
+            "3:45 PM",
+            "4:30 PM",
+            "5:15 PM",
+            "6:00 PM",
+            "6:45 PM",
+            "7:30 PM"
+        ],
         "closures": [
             {
                 "start": "2019-04-06",
@@ -13,14 +40,42 @@
             {
                 "start": "2019-04-15",
                 "end": "2019-04-29"
-            }
-        ], 
-        "services": [
-            {
-
             },
             {
-
+                "start": "2019-07-04",
+                "end": "2019-07-04"
+            },
+            {
+                "start": "2019-07-27",
+                "end": "2019-07-27"
+            },
+            {
+                "start": "2019-09-02",
+                "end": "2019-09-16"
+            },
+            {
+                "start": "2019-10-05",
+                "end": "2019-10-05"
+            },
+            {
+                "start": "2019-11-27",
+                "end": "2019-11-28"
+            },
+            {
+                "start": "2019-12-24",
+                "end": "2019-12-25"
+            },
+            {
+                "start": "2019-12-31",
+                "end": "2020-1-1"
+            }
+        ], 
+        "weather summary": "",
+        "history": [
+            {
+                "announced": "2003-12-12",
+                "groundbreaking": "2005-07-30",
+                "dedicated": "2008-02-10"
             }
         ]
     },

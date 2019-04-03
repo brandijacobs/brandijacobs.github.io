@@ -7,11 +7,6 @@
         margin-top: 8px;
     }
 
-    body {
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-
     .current {
         margin-bottom: .5em;
     }
@@ -35,7 +30,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1.25fr .75fr 1fr;
         column-gap: 1em;
     }
 
@@ -102,8 +97,7 @@
     }
 
     main {
-        margin-left: 10em;
-        margin-right: 10em;
+        margin:1rem;
     }
 
     main figure {
