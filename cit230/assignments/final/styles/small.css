@@ -8,12 +8,8 @@ a {
     color: black;
 }
 
-/* body {
-    background-image: url(../images/marble-background.jpg);
-} */
-
 footer {
-    font-size: .6em;
+    font-size: .5rem;
     background-color:#B58999;
     width: 100%;
 }
@@ -30,20 +26,23 @@ h1 {
 
 h2 {
     background-color: white;
-    padding: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5rem;
     margin: 0rem 1rem;
 }
 
 h3 {
-    margin-bottom: 0rem;
-    padding-left: .5rem;
     font-size: 1.25em;
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 h4 {
     margin-top: .5em;
-    padding-left: .5rem;
     font-size: .75em;
+    padding: .25rem;
 }
 
 header {
@@ -92,7 +91,7 @@ nav, ul {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0rem 1rem; 
 }
 
@@ -104,10 +103,14 @@ ul li {
 .aboutTemple {
     position: absolute;
     z-index: 1000;
-    top: 200px;
-    left: 100px;
-    width: 25%;
+    top: 230px;
+    width: 35%;
     opacity: .85;
+}
+
+.call {
+    text-align: center;
+    align-self: center;
 }
 
 .article {
@@ -153,12 +156,21 @@ hr {
     margin-left: 0;
 }
 
+.learn {
+    background-color: #F7F7F7;
+}
+
 .logo {
     border:2px solid white;
     width: 35px;
     height: 45px;
     align-self: center;
     margin-top: 0;
+}
+
+.makeReservation {
+    background-color: #B58999;
+    border: 1px solid #6B2A3D;
 }
 
 .motto {
@@ -177,8 +189,8 @@ hr {
 }
 
 .parallax-temples {
-    background-image: url("../images/washington-dc-summer.jpg");
-    height: 600px; 
+    background-image: url("../images/washington-dc-summer-large.jpg");
+    height: 425px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
