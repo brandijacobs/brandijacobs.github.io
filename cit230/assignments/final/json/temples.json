@@ -1,18 +1,39 @@
 [
     {
+        "name": "Provo City Center Temple",
+        "closures": [
+            {
+                "start": "2019-06-23",
+                "end": "2019-07-06"
+            },
+            {
+                "start": "2019-07-24",
+                "end": "2019-07-24"
+            },
+            {
+                "start": "2019-10-05",
+                "end": "2019-10-05"
+            },
+            {
+                "start": "2019-11-27",
+                "end": "2019-11-28"
+            },
+            {
+                "start": "2019-12-01",
+                "end": "2019-12-14"
+            },
+            {
+                "start": "2019-12-24",
+                "end": "2019-12-25"
+            },
+            {
+                "start": "2019-12-31",
+                "end": "2020-1-1"
+            }
+        ]
+    },
+    {
         "name": "Rexburg Idaho Temple",
-        "address": "750 S 2nd E, Rexburg, Idaho, United States",
-        "telephone": "(208) 656-0880",
-        "email": "",
-        "services": [
-            "Clothing rental available",
-            "No cafeteria available",
-            "No patron housing available",
-            "Distribution center nearby"
-        ],
-        "ordinance schedule": "",
-        "session schedule": [
-        ],
         "closures": [
             {
                 "start": "2019-04-06",
@@ -50,28 +71,59 @@
                 "start": "2019-12-31",
                 "end": "2020-1-1"
             }
-        ], 
-        "weather summary": "",
-        "history": [
+        ]
+    },
+    {
+        "name": "Sacramento California Temple",
+        "closures": [
             {
-                "announced": "2003-12-12",
-                "groundbreaking": "2005-07-30",
-                "dedicated": "2008-02-10"
+                "start": "2019-07-04",
+                "end": "2019-07-04"
+            },
+            {
+                "start": "2019-08-06",
+                "end": "2019-08-19"
+            },
+            {
+                "start": "2019-10-05",
+                "end": "2019-10-05"
+            },
+            {
+                "start": "2019-11-27",
+                "end": "2019-11-28"
+            },
+            {
+                "start": "2019-12-24",
+                "end": "2019-12-25"
+            },
+            {
+                "start": "2019-12-31",
+                "end": "2020-1-1"
             }
         ]
     },
     {
-        "name": "",
-        "location":  "",
-        "dedicated": "",
+        "name": "Seattle Washington Temple",
         "closures": [
             {
-                "start": "2019-04-06",
-                "end": "2019-04-06"
+                "start": "2019-07-04",
+                "end": "2019-07-04"
             },
             {
-                "start": "2019-04-15",
-                "end": "2019-04-29"
+                "start": "2019-08-18",
+                "end": "2019-09-02"
+            },
+            {
+                "start": "2019-10-05",
+                "end": "2019-10-05"
+            },
+            {
+                "start": "2019-11-27",
+                "end": "2019-11-28"
+            },
+            {
+                "start": "2019-12-24",
+                "end": "2019-12-25"
             }
         ]
     }

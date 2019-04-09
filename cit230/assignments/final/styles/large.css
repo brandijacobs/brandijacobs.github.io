@@ -83,10 +83,16 @@
         padding-bottom: 1.5em;
     }
     
-    .hurricane {
-        width: 50%;
+    .reception {
+        width: 20%;
         float: right;
-        margin: 4rem 1rem;
+        margin: -2rem 4rem;
+    }
+
+    .reception-table {
+        width: 20%;
+        float: right;
+        margin: 2rem 0rem;
     }
 
     iframe {

@@ -1,5 +1,6 @@
 * {
-    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Cormorant Garamond', serif; */
+    font-family: 'Cormorant Infant', serif;
     /* border: 1px solid #f00 !important; */
 }
 
@@ -47,7 +48,6 @@ h4 {
 
 header {
     background-color:white;
-    color: #3F5A70;
     size: relative;
     padding-bottom: .5em;
 }
@@ -131,7 +131,6 @@ ul li {
 .currentpage { 
     color:#B58999;
     font-style: italic;
-    padding: .5rem 2rem;
 }
 
 .forecast {

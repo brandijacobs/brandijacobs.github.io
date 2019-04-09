@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
-        <title>Temple Inn & Suites | Home</title>
+        <title>Temple Inn & Suites | Contact</title>
         <meta name="description" content="Temple Inn & Suites">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
@@ -29,29 +29,54 @@
             <nav>
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
-                    <li><a href="#" class="currentpage">Home</a></li> 
+                    <li><a href="home.html">Home</a></li> 
                     <li><a href="temple.html">Temples</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#" class="currentpage">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="call">
-                <h3 class="makeReservation">
-                    <a href="reservations.html">Make a Reservation</a>
-                </h3>
-                <h4 class="learn">
-                    <a href="services.html">Learn More</a>
-                </h4>
-            </div>
+        
+            <h2>Contact Us!</h2>
+            <img class="reception" src="images/reception.jpg" alt="Wedding Reception Table Decorations">
+            <img class="reception-table" src="images/reception-table.jpg" alt="Wedding Reception Table Decorations">
+            <form action="thanks.html" method="GET">
+                <div>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="firstName" pattern="[a-zA-z\s]{5,}" required>
+                </div>
+                <div>
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName" pattern="[a-zA-z\s]{5,}" required>
+                    </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="user@domain.com" required>
+                </div>
+                <div>
+                    <label for="additional">Comments: </label>
+                    <input type="textarea" id="additional" name="additional" wrap="soft">
+                </div>
+                <div>
+                    <!-- changed value from "report" to "submit" -->
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <p>
+                4800 Montgomery Ln #300<br>
+                Bethesda, MD 20814
+            </p>
+        
         </main>
         <footer>
             <p><span id="fullDate"></span> | Temple Inn & Suites</p>
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/home.js"></script>  
-    </body>
-</html>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/home.js"></script>
+        </body>
+        
+        </html>
