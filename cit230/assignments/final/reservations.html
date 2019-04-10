@@ -29,24 +29,63 @@
             <nav>
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
-                    <li><a href="#" class="currentpage">Home</a></li> 
+                    <li><a href="home.html">Home</a></li> 
                     <li><a href="temple.html">Temples</a></li>
-                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="#" class="currentpage">Reservations</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="call">
-                <h3 class="makeReservation">
-                    <a href="reservations.html">Make a Reservation</a>
-                </h3>
-                <h4 class="learn">
-                    <a href="services.html">Learn More</a>
-                </h4>
-            </div>
-        </main>
+                <h2>Book Reservation</h2>
+                <img class="room" src="images/room.jpg" alt="Hotel Room">
+                <form action="thanks.html" method="GET">
+                    <div>
+                        <label for="firstName">*First Name: </label>
+                        <input type="text" id="firstName" name="firstName" pattern="[a-zA-z\s]{5,}" required>
+                    </div>
+                    <div>
+                            <label for="lastName">*Last Name: </label>
+                            <input type="text" id="lastName" name="lastName" pattern="[a-zA-z\s]{5,}" required>
+                        </div>
+                    <div>
+                        <label for="email">*Email: </label>
+                        <input type="email" id="email" name="email" placeholder="user@domain.com" required>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">*Phone Number: </label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div>
+                        <label for="address">Home Address: </label>
+                        <input type="text" id="address" name="address" required>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div>
+                            <label for="roomNumber">Rooms: </label>
+                            <input type="text" id="roomNumber" name="roomNumber" list="list">
+                            <span class="roomNumber">
+                                <datalist id="list">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </datalist>
+                            <label for="roomNumber">1 Queen Bed</label>
+                            </span>
+                        </div>
+                    <div>
+                        <label for="additional">*Comments: </label>
+                        <textarea id="additional" name="additional" rows="3" cols="10"></textarea>
+                    </div>
+                    <div>
+                        <!-- changed value from "report" to "submit" -->
+                        <input type="submit" value="Continue to Payment">
+                    </div>
+                </form>
+            </main>
         <footer>
             <p><span id="fullDate"></span> | Temple Inn & Suites</p>
         </footer>

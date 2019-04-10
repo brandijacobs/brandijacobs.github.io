@@ -24,7 +24,16 @@
         align-content: center;
     }
 
-    .hurricane {
+    /* Contact Page */
+    .reception {
+        display: none;
+    }
+
+    .reception-table {
+        display: none;
+    }
+
+    .room {
         display: none;
     }
 
