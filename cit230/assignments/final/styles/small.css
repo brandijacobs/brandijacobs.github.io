@@ -187,6 +187,16 @@ hr {
     margin:-1rem;
 }
 
+.parallax-services {
+    background-image: url("../images/san-diego-temple-sunset.jpg");
+    height: 425px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:-1rem;
+}
+
 .parallax-temples {
     background-image: url("../images/washington-dc-summer-large.jpg");
     height: 425px; 
@@ -265,6 +275,22 @@ label, select {
 
 .current-icon {
    display: flex;
+}
+
+.links {
+    padding-bottom: 1rem;
+}
+
+.links a {
+    padding-left: 1.5rem;
+}
+
+.links div {
+    padding-top: 2rem;
+}
+
+.services-page {
+    padding-top: 1.5rem;
 }
 
 .roomNumber {
