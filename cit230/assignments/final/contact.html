@@ -18,14 +18,6 @@
                 <section class="headings">
                     <h1>Temple Inn & Suites</h1>
                 </section>
-                <div class="callAction">
-                    <h3 class="makeReservation">
-                        <a href="reservations.html">Make a Reservation</a>
-                    </h3>
-                    <h4 class="learn">
-                        <a href="services.html">Learn More</a>
-                    </h4>
-                </div>
             <nav>
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
@@ -38,30 +30,28 @@
             </nav>
         </header>
         <main>
-        
             <h2>Contact Us!</h2>
             <img class="reception" src="images/reception.jpg" alt="Wedding Reception Table Decorations">
             <img class="reception-table" src="images/reception-table.jpg" alt="Wedding Reception Table Decorations">
             <form action="thanks.html" method="GET">
                 <div>
-                    <label for="firstName">*First Name: </label>
+                    <label for="firstName">First Name: </label>
                     <input type="text" id="firstName" name="firstName" pattern="[a-zA-z\s]{5,}" required>
                 </div>
                 <div>
-                        <label for="lastName">*Last Name: </label>
+                        <label for="lastName">Last Name: </label>
                         <input type="text" id="lastName" name="lastName" pattern="[a-zA-z\s]{5,}" required>
                     </div>
                 <div>
-                    <label for="email">*Email: </label>
+                    <label for="email">Email: </label>
                     <input type="email" id="email" name="email" placeholder="user@domain.com" required>
                 </div>
                 <div>
-                    <label for="additional">*Comments: </label>
+                    <label for="additional">Comments: </label>
                     <textarea id="additional" name="additional" rows="3" cols="10"></textarea>
                 </div>
                 <div>
-                    <!-- changed value from "report" to "submit" -->
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Send">
                 </div>
             </form>
             <hr>
@@ -81,7 +71,6 @@
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/home.js"></script>
         </body>
         
         </html>

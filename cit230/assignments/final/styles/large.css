@@ -7,6 +7,10 @@
         margin-top: 8px;
     }
 
+    .aboutProvoTemple {
+        display: none;
+    }
+
     .callAction .makeReservation  {
         position: absolute;
         z-index: 1000;
@@ -30,7 +34,7 @@
     }
 
     main img {
-        display: none;
+        width: 100%;
     }
 
     .current {
@@ -120,26 +124,6 @@
         padding-left: 1rem;
     }
 
-    .image1 {
-        float: left;
-        margin-bottom: 0rem;
-        margin-right: .5rem;
-    }
-    
-    .image2 {
-        float: right;
-        padding-left: 1rem;
-        margin-right: -.5em;
-        margin-left: .5rem;
-        margin-bottom: 0rem;
-    }
-
-    .image1, .image2  {
-        padding-right: .5em;
-        margin-left: 0;
-        margin-top: 0;
-    }
-
     li {
         display: inline-block;
         align-content: flex-end;
@@ -160,8 +144,10 @@
         margin:1rem;
     }
 
-    main figure {
-        width: 35%;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
     }
 
     .motto {
@@ -224,6 +210,16 @@
     
     .parallax-reception {
         background-image: url("../images/salt-lake.jpg");
+        height: 425px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:-1rem;
+    }
+
+    .parallax-full-time {
+        background-image: url("../images/texas.jpg");
         height: 425px; 
         background-attachment: fixed;
         background-position: center;

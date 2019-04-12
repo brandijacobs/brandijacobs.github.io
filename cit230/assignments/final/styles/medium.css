@@ -28,6 +28,25 @@
         width: 100%;
     }
 
+    .suite, .bathroom {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+     
+    }
+
+    .grid-temple {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .callAction .makeReservation  {
         display: none;
     }
@@ -35,7 +54,11 @@
     .callAction .learn {
         display: none;
     }
-    
+
+    .aboutProvoTemple img {
+        width: 100%;
+    }
+
     .parallax-home {
         display: none;
     }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+        <title>Temple Inn & Suites | Full-Time</title>
+        <meta name="description" content="Temple Inn & Suites">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <img class="logo" src="images/angel-moroni-logo.png" width=120 alt="Logo">
+                <section class="headings">
+                    <h1>Temple Inn & Suites</h1>
+                </section>
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="home.html">Home</a></li> 
+                    <li><a href="temple.html">Temples</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="services.html" class="currentpage">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <div class="parallax-full-time">
+        </div>
+        <article class="spaceTop">
+            <h2>Temple Missionary Suites</h2>
+            <p>
+                We believe worrying about where to live while serving the Lord shouldn't be an issue. That's why
+                we designed rooms to be comfortable, nice, and affordable. We offer two rooms for our temple missionaries:
+                1 King Bed Suite & 1 Queen Bed Suite. All our full-time temple missionary suites are on the first level
+                and are handicap rooms. Please contact us with questions or comments below! We would be happy to make
+                accomodations for you!
+            </p>
+            <div class="grid">
+            <figure class="suite">
+                <img src="images/hotel-suite-small.jpg" alt="Suite Room" srcset="
+                                                        images/hotel-suite-small.jpg 400w, 
+                                                        images/hotel-suite-medium 500w,
+                                                        images/hotel-suite-large.jpg 850w">
+            </figure>
+            <figure class="bathroom">
+                <img src="images/bathroom-small.jpg" alt="Suite Bathroom" srcset="
+                                                            images/bathroom-small.jpg 400w, 
+                                                            images/bathroom-medium.jpg 500w,
+                                                            images/bathroom-large.jpg 850w">
+            </figure>
+            </div>
+        </article>
+        <form action="thanks.html" method="GET">
+                <div>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="firstName" pattern="[a-zA-z\s]{5,}" required>
+                </div>
+                <div>
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName" pattern="[a-zA-z\s]{5,}" required>
+                    </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="user@domain.com" required>
+                </div>
+                <div>
+                    <label for="additional">Comments: </label>
+                    <textarea id="additional" name="additional" rows="3" cols="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p><span id="fullDate"></span> | Temple Inn & Suites</p>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
