@@ -24,6 +24,34 @@
         align-content: center;
     }
 
+    iframe {
+        width: 100%;
+    }
+
+    .callAction .makeReservation  {
+        display: none;
+    }
+    
+    .callAction .learn {
+        display: none;
+    }
+    
+    .parallax-home {
+        display: none;
+    }
+    
+    .parallax-services {
+        display: none;
+    }
+    
+    .parallax-temples {
+        display: none;
+    }
+    
+    .parallax-reception {
+        display: none;
+    }
+
     /* Contact Page */
     .reception {
         display: none;

@@ -46,37 +46,15 @@ h4 {
     padding: .25rem;
 }
 
-header {
-    background-color:white;
-    size: relative;
-    padding-bottom: .5em;
-}
-
 header img, .headings {
     display: inline-block;
 	vertical-align: middle;
     margin: .5em;
 }
 
-hr {
-    margin-bottom: -12px;
-}
-
-iframe {
-    width: 100%;
-}
-
-figure img {
-    width: 100%;
-}
-
-main figure {
-    width: 100%;
-}
-
 main p {
     background: white;
-    color: #3F5A70;
+    color: black;
     padding: .5rem;
     margin-top: 0;
 }
@@ -113,19 +91,12 @@ ul li {
     align-self: center;
 }
 
-.article {
-    background-color:white;
-    color: #3F5A70;
-    margin-top: -1.5em;
-    padding: .5em;
-    margin-bottom: .5em;
+.callAction .makeReservation  {
+    display: none;
 }
 
-.contact {
-    background-color: white;
-    color: #3F5A70;
-    padding: 0.25em .5em;
-    margin-bottom: .5em;
+.callAction .learn {
+    display: none;
 }
 
 .currentpage { 
@@ -133,26 +104,10 @@ ul li {
     font-style: italic;
 }
 
-.forecast {
-    display: none;
-}
-header {
-    padding-bottom: 0rem;
-}
-
-hr {
-    margin-top: .25rem;
-}
 .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.image2  {
-    float: top; 
-    margin-top: 0;
-    margin-left: 0;
 }
 
 .learn {
@@ -172,84 +127,16 @@ hr {
     border: 1px solid #6B2A3D;
 }
 
-.motto {
-    margin-top: -1.5em;
-    font-size: .7em;
-}
-
-.parallax-home {
-    background-image: url("../images/provo-city-center-large.jpg");
-    height: 425px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin:-1rem;
-}
-
-.parallax-services {
-    background-image: url("../images/san-diego-temple-sunset.jpg");
-    height: 425px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin:-1rem;
-}
-
-.parallax-temples {
-    background-image: url("../images/washington-dc-summer-large.jpg");
-    height: 425px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin:-1rem;
-}
-
 .smallerFont {
     font-size: 1rem;
 }
-
-.summary {
-    color: #3F5A70;
-    background-color: white;
-    padding: .5em;
-    margin-bottom: .5em;
-}
-
-
-
-/* grid */
-figcaption {
-    padding: 0.5em;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.shadow {
-    margin-left: 0;
-    margin-right: 0;
-    background-color: white;
-    color: #3F5A70;
-    width: 100%;
-    border: 1px white solid;
-}
-
 
 
 /* Form Format */
 
 div input {
-    display: block;
     margin: .5rem .5rem;
     margin-bottom: 1rem !important;
-}
-
-div input span {
-   margin-left: 4rem;
 }
 
 form {
@@ -264,17 +151,9 @@ form div {
     margin-top: 5px;
 }
 
-form div input, select {
-    margin-bottom: .5rem;
-}
-
 label, select {
     display: block;
     margin-left: .5rem;
-}
-
-.current-icon {
-   display: flex;
 }
 
 .links {
@@ -291,6 +170,14 @@ label, select {
 
 .services-page {
     padding-top: 1.5rem;
+}
+
+article ul li {
+    display: block;
+    background-color: white;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 4rem;
 }
 
 .roomNumber {
@@ -311,8 +198,12 @@ label, select {
     box-sizing: border-box;
     resize: none;
     text-align: start;
-    
 }
+
+#hide{
+    display: none;
+}
+
 
 /* Homepage */
 #homegrid {
@@ -334,6 +225,10 @@ label, select {
         margin-top: -.5em;
     }
 
+    iframe {
+        width: 100%;
+    }
+
     .headings {
         text-align: center;
     }
@@ -346,9 +241,27 @@ label, select {
         display: none;
     }
 
+
+    .parallax-home {
+        display: none;
+    }
+    
+    .parallax-services {
+        display: none;
+    }
+    
+    .parallax-temples {
+        display: none;
+    }
+    
+    .parallax-reception {
+        display: none;
+    }
+
     ul {
         justify-content: start;
     }
+
     
     .hide li {
         list-style-type: none;
