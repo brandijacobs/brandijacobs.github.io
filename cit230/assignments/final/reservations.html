@@ -24,7 +24,7 @@
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="temple.html">Temples</a></li>
+                    <li><a href="temples.html">Temples</a></li>
                     <li><a href="#" class="currentpage">Reservations</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -34,7 +34,7 @@
     <main>
         <h2 class="spaceTop">Hotel Reservation</h2>
         <img class="room" src="images/room.jpg" alt="Hotel Room">
-        <form action="thanks.html" method="GET">
+        <form action="payment.html" method="GET">
             <div>
                 <label for="firstName">First Name: </label>
                 <input type="text" id="firstName" name="firstName" pattern="[a-zA-z\s]{5,}" required>
@@ -129,7 +129,6 @@
                 <textarea id="additional" name="additional" rows="3" cols="10"></textarea>
             </div>
             <div>
-                <!-- changed value from "report" to "submit" -->
                 <input type="submit" value="Continue to Payment">
             </div>
         </form>
