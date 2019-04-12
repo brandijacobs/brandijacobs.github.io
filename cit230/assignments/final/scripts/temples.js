@@ -139,20 +139,20 @@ templeRequest.send();
 templeRequest.onload = function() {
     var templeData = templeRequest.response;
 
-    document.getElementById("provoCloseStart0").innerHTML += templeData[0].closures[0].start;
-    document.getElementById("provoCloseEnd0").innerHTML += templeData[0].closures[0].end;
-    document.getElementById('provoCloseStart1').innerHTML += templeData[0].closures[1].start;
-    document.getElementById('provoCloseEnd1').innerHTML += templeData[0].closures[1].end;
-    document.getElementById('provoCloseStart2').innerHTML += templeData[0].closures[2].start;
-    document.getElementById('provoCloseEnd2').innerHTML += templeData[0].closures[2].end;
-    document.getElementById('provoCloseStart3').innerHTML += templeData[0].closures[3].start;
-    document.getElementById('provoCloseEnd3').innerHTML += templeData[0].closures[3].end;
-    document.getElementById('provoCloseStart4').innerHTML += templeData[0].closures[4].start;
-    document.getElementById('provoCloseEnd4').innerHTML += templeData[0].closures[4].end;
-    document.getElementById('provoCloseStart5').innerHTML += templeData[0].closures[5].start;
-    document.getElementById('provoCloseEnd5').innerHTML += templeData[0].closures[5].end;
-    document.getElementById('provoCloseStart6').innerHTML += templeData[0].closures[6].start;
-    document.getElementById('provoCloseEnd6').innerHTML += templeData[0].closures[6].end;
+    document.getElementById('provoCloseStart0').innerHTML = templeData[0].closures[0].start;
+    document.getElementById('provoCloseEnd0').innerHTML = templeData[0].closures[0].end;
+    document.getElementById('provoCloseStart1').innerHTML = templeData[0].closures[1].start;
+    document.getElementById('provoCloseEnd1').innerHTML = templeData[0].closures[1].end;
+    document.getElementById('provoCloseStart2').innerHTML = templeData[0].closures[2].start;
+    document.getElementById('provoCloseEnd2').innerHTML = templeData[0].closures[2].end;
+    document.getElementById('provoCloseStart3').innerHTML = templeData[0].closures[3].start;
+    document.getElementById('provoCloseEnd3').innerHTML = templeData[0].closures[3].end;
+    document.getElementById('provoCloseStart4').innerHTML = templeData[0].closures[4].start;
+    document.getElementById('provoCloseEnd4').innerHTML = templeData[0].closures[4].end;
+    document.getElementById('provoCloseStart5').innerHTML = templeData[0].closures[5].start;
+    document.getElementById('provoCloseEnd5').innerHTML = templeData[0].closures[5].end;
+    document.getElementById('provoCloseStart6').innerHTML = templeData[0].closures[6].start;
+    document.getElementById('provoCloseEnd6').innerHTML = templeData[0].closures[6].end;
 
     document.getElementById('rexburgCloseStart0').innerHTML = templeData[1].closures[0].start;
     document.getElementById('rexburgCloseEnd0').innerHTML = templeData[1].closures[0].end;
@@ -176,6 +176,25 @@ templeRequest.onload = function() {
 
     document.getElementById('sacramentoCloseStart0').innerHTML = templeData[2].closures[0].start;
     document.getElementById('sacramentoCloseEnd0').innerHTML = templeData[2].closures[0].end;
+    document.getElementById('sacramentoCloseStart1').innerHTML = templeData[2].closures[1].start;
+    document.getElementById('sacramentoCloseEnd1').innerHTML = templeData[2].closures[1].end;
+    document.getElementById('sacramentoCloseStart2').innerHTML = templeData[2].closures[2].start;
+    document.getElementById('sacramentoCloseEnd2').innerHTML = templeData[2].closures[2].end;
+    document.getElementById('sacramentoCloseStart3').innerHTML = templeData[2].closures[3].start;
+    document.getElementById('sacramentoCloseEnd3').innerHTML = templeData[2].closures[3].end;
+    document.getElementById('sacramentoCloseStart4').innerHTML = templeData[2].closures[4].start;
+    document.getElementById('sacramentoCloseEnd4').innerHTML = templeData[2].closures[4].end;
+    document.getElementById('sacramentoCloseStart5').innerHTML = templeData[2].closures[5].start;
+    document.getElementById('sacramentoCloseEnd5').innerHTML = templeData[2].closures[5].end;
 
-    document.getElementById('seatleClose').innerHTML = templeData[3].temple;
+    document.getElementById('seattleCloseStart0').innerHTML = templeData[3].closures[0].start;
+    document.getElementById('seattleCloseEnd0').innerHTML = templeData[3].closures[0].end;
+    document.getElementById('seattleCloseStart1').innerHTML = templeData[3].closures[1].start;
+    document.getElementById('seattleCloseEnd1').innerHTML = templeData[3].closures[1].end;
+    document.getElementById('seattleCloseStart2').innerHTML = templeData[3].closures[2].start;
+    document.getElementById('seattleCloseEnd2').innerHTML = templeData[3].closures[2].end;
+    document.getElementById('seattleCloseStart3').innerHTML = templeData[3].closures[3].start;
+    document.getElementById('seattleCloseEnd3').innerHTML = templeData[3].closures[3].end;
+    document.getElementById('seattleCloseStart4').innerHTML = templeData[3].closures[4].start;
+    document.getElementById('seattleCloseEnd4').innerHTML = templeData[3].closures[4].end;
 }

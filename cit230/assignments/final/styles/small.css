@@ -30,7 +30,7 @@ h2 {
     padding-top: .5em;
     padding-bottom: .5em;
     padding-left: .5rem;
-    /* margin: 0rem 1rem; */
+    margin: 0rem 1rem;
 }
 
 h3 {
@@ -68,11 +68,22 @@ nav, ul {
     padding: 0;
 }
 
-
+.size100 {
+    width: 100%;
+}
 
 p {
     font-size: 1rem;
-    /* margin: 0rem 1rem;  */
+    margin: 0rem 1rem;
+}
+
+#roomNumber {
+    width: 40px !important;
+    margin-bottom: 0 !important;
+}
+
+.startDate {
+    margin-top: 1.5rem;
 }
 
 ul li {
@@ -80,13 +91,6 @@ ul li {
 }
 
 /* Classes */
-.aboutTemple {
-    position: absolute;
-    z-index: 1000;
-    top: 220px;
-    width: 35%;
-    opacity: .85;
-}
 
 .aboutProvoTemple img {
     width: 100%;
@@ -228,6 +232,10 @@ section div, article {
 
     iframe {
         width: 100%;
+    }
+
+    .aboutTemple {
+        display: none;
     }
 
     .suite, .bathroom {

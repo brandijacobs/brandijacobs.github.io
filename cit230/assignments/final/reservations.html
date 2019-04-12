@@ -1,100 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
-        <title>Temple Inn & Suites | Reservation</title>
-        <meta name="description" content="Temple Inn & Suites">
-        <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
-    </head>
-    <body>
-        <header>
-            <div id="header">
-                <img class="logo" src="images/angel-moroni-logo.png" width=120 alt="Logo">
-                <section class="headings">
-                    <h1>Temple Inn & Suites</h1>
-                </section>
-                <div class="callAction" id="hide">
-                    <h3 class="makeReservation">
-                        <a href="reservations.html">Make a Reservation</a>
-                    </h3>
-                    <h4 class="learn">
-                        <a href="services.html">Learn More</a>
-                    </h4>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites | Reservation</title>
+    <meta name="description" content="Temple Inn & Suites">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img class="logo" src="images/angel-moroni-logo.png" width=120 alt="Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
             <nav>
                 <button onclick="toggleMenu()">&#9776;</button>
                 <ul id="primaryNav" class="hide">
-                    <li><a href="home.html">Home</a></li> 
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="temple.html">Temples</a></li>
                     <li><a href="#" class="currentpage">Reservations</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-                <h2 class="spaceTop">Hotel Reservation</h2>
-                <img class="room" src="images/room.jpg" alt="Hotel Room">
-                <form action="thanks.html" method="GET">
-                    <div>
-                        <label for="firstName">First Name: </label>
-                        <input type="text" id="firstName" name="firstName" pattern="[a-zA-z\s]{5,}" required>
-                    </div>
-                    <div>
-                            <label for="lastName">Last Name: </label>
-                            <input type="text" id="lastName" name="lastName" pattern="[a-zA-z\s]{5,}" required>
-                        </div>
-                    <div>
-                        <label for="email">Email: </label>
-                        <input type="email" id="email" name="email" placeholder="user@domain.com" required>
-                    </div>
-                    <div>
-                        <label for="phoneNumber">Phone Number: </label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
-                    </div>
-                    <div>
-                        Home Address:
-                        <label for="street">Street: </label>
-                        <input type="text" id="street" name="street" required>
-                        <label for="city">City: </label>
-                        <input type="text" id="city" name="city" required>
-                        <label for="state">State: </label>
-                        <input type="text" id="state" name="state" required>
-                    </div>
-                    <div>
-                            <label for="roomNumber">Rooms: </label>
-                            <input type="text" id="roomNumber" name="roomNumber" list="list">
-                            <span class="roomNumber">
-                                <datalist id="list">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </datalist>
-                            <label for="roomNumber">1 Queen Bed</label>
-                            </span>
-                        </div>
-                    <div>
-                        <label for="additional">Comments: </label>
-                        <textarea id="additional" name="additional" rows="3" cols="10"></textarea>
-                    </div>
-                    <div>
-                        <!-- changed value from "report" to "submit" -->
-                        <input type="submit" value="Continue to Payment">
-                    </div>
-                </form>
-            </main>
-        <footer>
-            <p><span id="fullDate"></span> | Temple Inn & Suites</p>
-        </footer>
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/currentdate.js"></script>
-        <script src="scripts/home.js"></script>  
-    </body>
+    </header>
+    <main>
+        <h2 class="spaceTop">Hotel Reservation</h2>
+        <img class="room" src="images/room.jpg" alt="Hotel Room">
+        <form action="thanks.html" method="GET">
+            <div>
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" pattern="[a-zA-z\s]{5,}" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" pattern="[a-zA-z\s]{5,}" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="user@domain.com" required>
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(123) 456-7890" required>
+            </div>
+            <div>
+                <label for="state">Home State: (If outside of US, please leave blank.)</label>
+                <input type="text" id="state" name="state" placeholder="CA" pattern="[A-Z\s]{2}">
+            </div>
+            <div>
+                <label for="state">Home Country: </label>
+                <input type="text" id="state" name="state" placeholder="United States of America">
+            </div>
+            <div>
+                <label for="location">Location: </label>
+                <input type="text" id="location" name="location" list="list1">
+                <datalist id="list1" value="Please Select">
+                    <option value="Provo City Center">Provo City Center</option>
+                    <option value="Rexburg">Rexburg</option>
+                    <option value="Sacramento">Sacramento</option>
+                    <option value="Seattle">Seattle</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="roomNumber">Rooms: (If zero, please leave blank.) </label>
+                <input type="text" id="roomNumber" name="roomNumber" list="list">
+                <span class="roomNumber">
+                    <datalist id="list">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                    <label for="roomNumber">1 King Bed</label>
+                </span><br>
+                <input type="text" id="roomNumber" name="roomNumber" list="list">
+                <span class="roomNumber">
+                    <datalist id="list">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                    <label for="roomNumber">1 Queen Bed</label>
+                </span><br>
+                <input type="text" id="roomNumber" name="roomNumber" list="list">
+                <span class="roomNumber">
+                    <datalist id="list">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                    <label for="roomNumber">2 Queen Beds</label>
+                </span><br>
+                <input type="text" id="roomNumber" name="roomNumber" list="list">
+                <span class="roomNumber">
+                    <datalist id="list">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                    <label for="roomNumber">1 Queen Bed & Pull-Out Sofa</label>
+                </span>
+            </div>
+            <div>
+                <label class="startDate" for="startDate">Start Date: </label>
+                <input type="date" id="startDate" name="startDate">
+            </div>
+            <div>
+                <label for="endDate">End Date: </label>
+                <input type="date" id="endDate" name="endDate">
+            </div>
+            <div>
+                <label for="additional">Comments: </label>
+                <textarea id="additional" name="additional" rows="3" cols="10"></textarea>
+            </div>
+            <div>
+                <!-- changed value from "report" to "submit" -->
+                <input type="submit" value="Continue to Payment">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p><span id="fullDate"></span> | Temple Inn & Suites</p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
 </html>
